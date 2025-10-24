@@ -1,9 +1,12 @@
 ---
 layout: default
-title: Sarah's Jekyll Site
+title: Home
 ---
-# Welcome to my GitHub Pages website!
 
-This is the home page for my Jekyll-powered site hosted on GitHub Pages. You can edit this file to change the content.
+# Welcome
 
-Check out the [About page](about.md) for more information.
+Hello, I'm Sarah Perry. I am a [Your Profession/Specialty]. Welcome to my professional portfolio, where you can learn more about my work, experience, and skills.
+
+*   **[About Me](/about/)**: Learn more about my background and professional journey.
+*   **[Resume](/resume/)**: View and download my detailed resume.
+*   **[Contact](/contact/)**: Connect with me via LinkedIn or email.
