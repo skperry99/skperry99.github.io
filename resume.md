@@ -25,10 +25,13 @@ permalink: /resume/
 
 ## Recent Projects
 - **Pixel Pets:** Full-stack virtual pet app built with React, Spring Boot, and MySQL.
-- **Weather Dashboard:** JavaScript-based API app for real-time weather data.
+- **Adopt Me - Bark Avenue Rescue Kennel:** Front-end app built with React, React Router, and component-based architecture.
 
 ---
 
 ## Previous Experience
 **AT&T — Telecommunications Engineer (RF & E911 Systems)**  
-Analyzed system KPIs and call trace data to optimize network reliability and public safety response systems.
+• Managed RF and E911 network design, compliance, and vendor collaboration.
+• Delivered scalable solutions for coverage expansion, FCC regulatory adherence, and system optimization.
+• Supported deployment of hundreds of sites, improving accuracy, performance, and efficiency.
+
