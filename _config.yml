@@ -3,11 +3,10 @@ plugins:
   - jekyll-remote-theme
 
 title: Sarah Perry | Full-Stack Developer
-description: Full-stack developer skilled in React, Spring Boot, and system optimization.
+description: Full-Stack Software Developer skilled in React, Spring Boot, and PostgreSQL.
 github_username: skperry99
 linkedin_username: sarah-k-perry
 
-# Navigation
 header_pages:
   - index.md
   - about.md
@@ -15,9 +14,5 @@ header_pages:
   - resume.md
   - contact.md
 
-# Add a favicon (optional)
-favicon: /assets/favicon.ico
-
 include:
   - assets/css/custom.css
-
