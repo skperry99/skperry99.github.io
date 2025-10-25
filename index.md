@@ -3,10 +3,15 @@ layout: default
 title: Home
 ---
 
-# Welcome
+# 👋 Welcome
 
-Hello, I'm Sarah Perry. I am a [Your Profession/Specialty]. Welcome to my professional portfolio, where you can learn more about my work, experience, and skills.
+Hi, I'm **Sarah Perry**, a full-stack developer passionate about building applications that are both technically solid and delightful to use.
 
-*   **[About Me](/about)**: Learn more about my background and professional journey.
-*   **[Resume](/resume)**: View and download my detailed resume.
-*   **[Contact](/contact)**: Connect with me via LinkedIn or email.
+I’m currently completing **LaunchCode’s Full-Stack Software Developer** program, where I’ve built hands-on projects using **React**, **Spring Boot**, and **PostgreSQL**.
+
+Explore my work and experience:
+
+- 🧑‍💻 [About Me](/about)
+- 🚀 [Projects](/projects)
+- 📄 [Resume](/resume)
+- ✉️ [Contact](/contact)
