@@ -17,35 +17,33 @@ permalink: /projects/
     <p><strong>Highlights:</strong></p>
     <ul>
       <li>Built a React front end with custom components for pet interactions, profile management, and adoption flow.</li>
-      <li>Developed a Spring Boot REST API to manage users, pets, and pet actions — enabling full CRUD functionality across the system.</li>
+      <li>Developed a Spring Boot REST API to manage users, pets, and pet actions — enabling full CRUD functionality.</li>
       <li>Integrated a PostgreSQL database with clearly defined relationships and an ERD for scalability and clarity.</li>
       <li>Designed a clean, responsive UI with pixel-art theming and smooth animations for a nostalgic, game-inspired aesthetic.</li>
     </ul>
 
     <p><strong>Impact:</strong>  
-    Demonstrates my ability to design, develop, and deploy a complete full-stack application — connecting user experience, database design, and API-driven functionality into a cohesive, creative product.</p>
+    Demonstrates my ability to design, develop, and deploy a complete full-stack application connecting UX, database design, and API-driven functionality.</p>
 
-    <div class="button-group">
-      <a class="button" href="https://github.com/skperry99/pixel-pets" target="_blank">View on GitHub</a>
-    </div>
+    <a class="button" href="https://github.com/skperry99/pixel-pets" target="_blank">View on GitHub</a>
   </article>
 
   <article class="project-card">
     <h2>🐾 Adopt Me – Bark Avenue Rescue Kennel</h2>
     <h3 class="subtitle">Frontend Project | React • React Router • JavaScript • CSS3 • Netlify</h3>
     <p><strong>Overview:</strong>  
-    Adopt Me is a cheerful, story-driven React web app that simulates a pet adoption experience at a fictional rescue. It combines humor and heart with clean design and dynamic navigation to create an engaging, interactive user journey.</p>
+    Adopt Me is a cheerful, story-driven React web app that simulates a pet adoption experience at a fictional animal rescue. It combines humor and heart with clean design and dynamic navigation to create an engaging, interactive user journey.</p>
 
     <p><strong>Highlights:</strong></p>
     <ul>
       <li>Developed a multi-page React app with React Router for smooth, dynamic navigation between pages.</li>
       <li>Built reusable components for pet profiles and adoption forms, improving consistency and maintainability.</li>
-      <li>Designed a fully responsive layout using custom CSS, Google Fonts, and subtle animations.</li>
-      <li>Structured content through modular components and deployed live to Netlify for seamless hosting.</li>
+      <li>Designed a fully responsive layout using custom CSS, Google Fonts, and subtle animations for accessibility and personality.</li>
+      <li>Structured the app with a modular component architecture and deployed live to Netlify for seamless hosting.</li>
     </ul>
 
     <p><strong>Impact:</strong>  
-    Demonstrates my ability to create user-focused, visually cohesive front-end experiences that balance creativity and functionality — laying the foundation for later full-stack projects.</p>
+    Demonstrates ability to create user-focused, visually cohesive front-end experiences that balance creativity and functionality.</p>
 
     <div class="button-group">
       <a class="button" href="https://stupendous-fudge-da75f3.netlify.app/" target="_blank">View Live</a>
