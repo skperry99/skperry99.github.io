@@ -73,8 +73,16 @@ h1, h2, h3 {
 /* Project cards */
 .projects-grid {
   display: grid;
+  grid-template-columns: 1fr; /* single column by default */
   gap: 2rem;
   margin-top: 2rem;
+}
+
+/* Two-column layout on wider screens */
+@media (min-width: 900px) {
+  .projects-grid {
+    grid-template-columns: 1fr 1fr; /* two columns */
+  }
 }
 
 .project-card {
