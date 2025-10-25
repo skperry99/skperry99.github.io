@@ -4,6 +4,8 @@ title: Resume
 permalink: /resume/
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
 # Resume
 
 **📥 [Download my Resume (PDF)]({{ site.baseurl }}/assets/Resume.pdf)**
