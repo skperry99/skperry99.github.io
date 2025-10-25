@@ -85,12 +85,15 @@ h1, h2, h3 {
   }
 }
 
+/* Fade-in + lift effect for project cards */
 .project-card {
   background: white;
   border-radius: 12px;
   padding: 1.5rem 2rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.6s ease;
+  opacity: 0; /* start hidden */
+  transform: translateY(20px); /* start slightly lower */
 }
 
 .project-card:hover {
@@ -112,6 +115,12 @@ h1, h2, h3 {
 
 .project-card ul {
   margin: 0.5rem 0 1rem 1.2rem;
+}
+
+/* When visible, fade in and lift */
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 /* Buttons */
