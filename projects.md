@@ -4,8 +4,6 @@ title: Projects
 permalink: /projects/
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-
 # Featured Projects
 
 <div class="project-card">
