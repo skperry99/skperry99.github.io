@@ -29,11 +29,10 @@
     </header>
 
     <nav class="main-nav">
-      <a href="{{ '/' | relative_url }}">🏠 Home</a>
-      <a href="{{ '/about/' | relative_url }}">About</a>
-      <a href="{{ '/projects/' | relative_url }}">Projects</a>
-      <a href="{{ '/resume/' | relative_url }}">Resume</a>
-      <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">🏠 Home</a>
+      <a href="{{ '/about/' | relative_url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+      <a href="{{ '/resume/' | relative_url }}" class="{% if page.url == '/resume/' %}active{% endif %}">Resume</a>
+      <a href="{{ '/contact/' | relative_url }}" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
     </nav>
 
     <main id="content" class="main-content" role="main">
