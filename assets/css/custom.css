@@ -15,6 +15,50 @@ body {
     --link-color: var(--accent-color);
 }
 
+/* Nav bar */
+.main-nav {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background: linear-gradient(90deg, #8a2be2, #6b5bff);
+  padding: 0.8rem 1rem;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.main-nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 12px;
+  transition: all 0.2s ease-in-out;
+}
+
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: scale(1.05);
+}
+
+.main-nav a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  transform: scale(1.05);
+}
+
+/* For smaller screens */
+@media (max-width: 600px) {
+  .main-nav {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+}
+
 /* Links */
 a {
     color: var(--link-color);
@@ -55,12 +99,4 @@ h1, h2, h3 {
 }
 .button:hover {
     background-color: #5848d0;
-}
-
-/* Profile image (optional) */
-.profile-pic {
-    border-radius: 50%;
-    width: 150px;
-    margin-bottom: 16px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
 }
