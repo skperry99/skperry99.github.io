@@ -4,6 +4,8 @@ title: About
 permalink: /about/
 ---
 
+<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+
 # About Me
 
 ## Professional Summary
