@@ -4,8 +4,6 @@ title: Contact
 permalink: /contact/
 ---
 
-<link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
-
 # Get in Touch
 
 I’d love to connect! You can reach me through LinkedIn or email for professional inquiries and collaborations.
