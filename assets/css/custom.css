@@ -44,13 +44,6 @@ body {
   transform: scale(1.05);
 }
 
-.main-nav a.active {
-  background-color: rgba(255, 255, 255, 0.3);
-  color: #fff;
-  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
-  transform: scale(1.05);
-}
-
 /* For smaller screens */
 @media (max-width: 600px) {
   .main-nav {
@@ -99,4 +92,42 @@ h1, h2, h3 {
 }
 .button:hover {
     background-color: #5848d0;
+}
+
+/* Active Link Animation */
+.main-nav a {
+  position: relative;
+  transition: all 0.25s ease-in-out;
+}
+
+/* Fade + lift when active */
+.main-nav a.active {
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+  transform: translateY(-2px);
+}
+
+/* Animated underline (slide-in effect) */
+.main-nav a::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  background: #fff;
+  transition: all 0.3s ease-in-out;
+  transform: translateX(-50%);
+}
+
+.main-nav a.active::after {
+  width: 60%;
+  opacity: 1;
+}
+
+/* Hover glow */
+.main-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+  transform: translateY(-2px) scale(1.05);
 }
