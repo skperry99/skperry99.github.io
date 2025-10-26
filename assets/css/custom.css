@@ -103,7 +103,7 @@ a:hover {
 h1, h2, h3 {
     color: #222;
     border-bottom: 2px solid var(--accent-color);
-    display: inline-block;
+    display: block;
     padding-bottom: 4px;
     margin-top: 1.5em;
 }
