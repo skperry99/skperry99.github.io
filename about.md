@@ -4,9 +4,7 @@ title: About
 permalink: /about/
 ---
 
-# About Me  
-
----
+# About Me     
 
 ## Professional Summary  
 Results-driven **Telecommunications Engineer** pivoting into **Software Development**, with expertise in **Java**, **JavaScript**, **React**, and **Spring Boot**.  
@@ -16,9 +14,7 @@ Skilled at troubleshooting complex systems, analyzing large datasets, and develo
 
 ---
 
-## Core Skills  
-
----
+## Core Skills     
 
 ### Programming & Development
 Java • JavaScript • React • Spring Boot • HTML/CSS • SQL • Git/GitHub
