@@ -22,7 +22,7 @@ body {
 
 .page-header .content {
   max-width: 1200px; /* Aligns content to the rest of your site */
-  margin: 20 auto; /* Centers the content */
+  margin: 20;
 }
 
 /* Nav bar */
