@@ -16,3 +16,5 @@ header_pages:
 
 include:
   - assets/css/custom.css
+  
+favicon: /assets/favicon.ico
