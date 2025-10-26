@@ -1,14 +1,28 @@
 /* ----------------------------
-   🌈 Base Layout & Typography
+   Base Layout 
 ----------------------------- */
+/* Base layout */
 body {
   font-family: "Inter", "Segoe UI", sans-serif;
   color: #333;
   background-color: #fafafa;
   line-height: 1.6;
-  margin: 0 auto;
+  margin: 0;
+  padding: 0;
+}
+
+/* Centered main content area */
+.main-content {
   max-width: 900px;
+  margin: 0 auto;
   padding: 20px;
+}
+
+/* For large screens */
+@media (min-width: 1200px) {
+  .main-content {
+    max-width: 1000px;
+  }
 }
 
 /* Accent colors */
