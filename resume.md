@@ -31,7 +31,7 @@ permalink: /resume/
 
 ## Previous Experience
 **AT&T — Telecommunications Engineer (RF & E911 Systems)**  
-• Managed RF and E911 network design, compliance, and vendor collaboration.
-• Delivered scalable solutions for coverage expansion, FCC regulatory adherence, and system optimization.
-• Supported deployment of hundreds of sites, improving accuracy, performance, and efficiency.
+- Managed RF and E911 network design, compliance, and vendor collaboration.
+- Delivered scalable solutions for coverage expansion, FCC regulatory adherence, and system optimization.
+- Supported deployment of hundreds of sites, improving accuracy, performance, and efficiency.
 
