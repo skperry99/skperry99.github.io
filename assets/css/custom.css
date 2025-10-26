@@ -101,12 +101,22 @@ a:hover {
 
 /* Headings */
 h1, h2, h3 {
-    color: #222;
-    border-bottom: 2px solid var(--accent-color);
-    display: block;
-    padding-bottom: 4px;
-    margin-top: 1.5em;
-    width: min-content;
+  display: block;
+  position: relative;
+  padding-bottom: 6px;
+  margin-top: 1.5em;
+  color: #222;
+}
+
+h1::after, h2::after, h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 80px; /* or use 40% for a proportional line */
+  height: 2px;
+  background: var(--accent-color);
+  border-radius: 2px;
 }
 
 /* Project cards */
