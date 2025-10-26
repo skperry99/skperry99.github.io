@@ -6,6 +6,8 @@ permalink: /about/
 
 # About Me  
 
+---
+
 ## Professional Summary  
 Results-driven **Telecommunications Engineer** pivoting into **Software Development**, with expertise in **Java**, **JavaScript**, **React**, and **Spring Boot**.  
 Background in system optimization, data analysis, and public safety communications (E911/NG911) at AT&T — combined with hands-on experience building full-stack applications.
@@ -15,6 +17,8 @@ Skilled at troubleshooting complex systems, analyzing large datasets, and develo
 ---
 
 ## Core Skills  
+
+---
 
 ### Programming & Development
 Java • JavaScript • React • Spring Boot • HTML/CSS • SQL • Git/GitHub
