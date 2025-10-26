@@ -32,7 +32,7 @@ body {
 }
 
 /* ----------------------------
-   🔗 Links
+   Links
 ----------------------------- */
 a {
   color: var(--link-color);
@@ -44,7 +44,30 @@ a:hover {
 }
 
 /* ----------------------------
-   🧭 Navigation Bar
+   Header
+----------------------------- */
+.page-header {
+  padding: 40px 20px; /* smaller vertical padding */
+  text-align: center;
+  background: linear-gradient(90deg, #8a2be2, #6b5bff);
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+.page-header h1 {
+  font-size: 2.2rem; /* slightly smaller */
+  margin: 0;
+}
+
+.page-header h2 {
+  font-size: 1.2rem; /* slightly smaller tagline */
+  margin: 10px 0 0 0;
+  font-weight: 400;
+}
+
+/* ----------------------------
+   Navigation Bar
 ----------------------------- */
 .main-nav {
   display: flex;
@@ -111,7 +134,7 @@ a:hover {
 }
 
 /* ----------------------------
-   🧩 Headings with Accent Underline
+   Headings with Accent Underline
 ----------------------------- */
 h1, h2, h3 {
   color: #222;
@@ -142,7 +165,7 @@ h3 span.underline-span::after {
 }
 
 /* ----------------------------
-   📦 Project Cards
+   Project Cards
 ----------------------------- */
 .project-card {
   background: white;
@@ -163,7 +186,7 @@ h3 span.underline-span::after {
 }
 
 /* ----------------------------
-   🎨 Buttons
+   Buttons
 ----------------------------- */
 .button {
   background-color: var(--accent-color);
@@ -179,3 +202,28 @@ h3 span.underline-span::after {
   background-color: #5848d0;
   transform: translateY(-2px);
 }
+
+/* ----------------------------
+   Footer
+----------------------------- */
+.site-footer {
+  width: 100%;
+  padding: 20px 0;
+  background: linear-gradient(90deg, #6b5bff, #8a2be2);
+  color: #fff;
+  text-align: center;
+  margin-top: 40px;
+  box-shadow: 0 -2px 10px rgba(0,0,0,0.1);
+}
+
+.site-footer a {
+  color: #fff;
+  margin: 0 10px;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.site-footer a:hover {
+  text-decoration: underline wavy #fff;
+}
+
