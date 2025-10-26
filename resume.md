@@ -4,6 +4,12 @@ title: Resume
 permalink: /resume/
 ---
 
+# <span class="underline-span">Resume</span>
+
+**📥 [Download my Resume (PDF)]({{ site.baseurl }}/assets/Resume.pdf)**
+
+---
+
 # <span class="underline-span">Professional Summary</span>
 Results-driven **Telecommunications Engineer** transitioning into **Software Development**, experienced in building scalable web applications with **React**, **Java**, and **Spring Boot**. Combines analytical problem-solving with a proven background in data analysis and systems engineering.
 
