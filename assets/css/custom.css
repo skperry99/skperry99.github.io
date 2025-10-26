@@ -15,6 +15,16 @@ body {
     --link-color: var(--accent-color);
 }
 
+.page-header {
+    width: 100%;
+    padding: 60px 0;
+}
+
+.page-header .content {
+  max-width: 1200px; /* Aligns content to the rest of your site */
+  margin: 0 auto; /* Centers the content */
+}
+
 /* Nav bar */
 .main-nav {
   display: flex;
