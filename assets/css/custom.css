@@ -106,6 +106,7 @@ h1, h2, h3 {
     display: block;
     padding-bottom: 4px;
     margin-top: 1.5em;
+    width: min-content;
 }
 
 /* Project cards */
