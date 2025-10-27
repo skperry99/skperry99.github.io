@@ -58,6 +58,12 @@
       </div>
     </footer>
     <script>
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        document.querySelector('.nav-links').classList.toggle('show');
+      });
+    </script>
+
+    <script>
       document.addEventListener("DOMContentLoaded", function() {
       const cards = document.querySelectorAll('.project-card');
         
