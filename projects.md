@@ -10,7 +10,7 @@ permalink: /projects/
 
   <article class="project-card">
     <h2>🐉 Pixel Pets</h2>
-    <h3 class="subtitle">Full Stack Capstone | React • Spring Boot • PostgreSQL • REST API • CSS3</h3>
+    <h3 class="subtitle">Full Stack Capstone | React • Spring Boot • MySQL • REST API • CSS3</h3>
     <p><strong>Overview:</strong>  
     Pixel Pets is a full-stack virtual pet adoption and care platform where users can create, adopt, and interact with digital pets that grow and respond over time. It merges playful pixel-art visuals with a robust backend architecture for a fun yet technically challenging experience.</p>
     
@@ -18,7 +18,7 @@ permalink: /projects/
     <ul>
       <li>Built a React front end with custom components for pet interactions, profile management, and adoption flow.</li>
       <li>Developed a Spring Boot REST API to manage users, pets, and pet actions — enabling full CRUD functionality.</li>
-      <li>Integrated a PostgreSQL database with clearly defined relationships and an ERD for scalability and clarity.</li>
+      <li>Integrated a MySQL database with clearly defined relationships and an ERD for scalability and clarity.</li>
       <li>Designed a clean, responsive UI with pixel-art theming and smooth animations for a nostalgic, game-inspired aesthetic.</li>
     </ul>
 
