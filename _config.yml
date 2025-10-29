@@ -15,6 +15,6 @@ header_pages:
   - contact.md
 
 include:
-  - assets/css/custom.css
+  - /assets/css/custom.css
   
 favicon: /assets/favicon.ico
