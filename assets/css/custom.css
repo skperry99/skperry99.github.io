@@ -70,7 +70,7 @@ a:hover {
    Navigation Bar
 ----------------------------- */
 .main-nav {
-  background: inherit;
+  background: linear-gradient(90deg, #8a2be2, #6b5bff);
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
