@@ -11,6 +11,7 @@ I began my career designing and optimizing **wireless networks** — large, intr
 After 15 years in engineering, I discovered a new passion in **software development**, where I get to combine the same analytical mindset with creative design and user interaction.
 
 Through **LaunchCode’s Full-Stack Software Developer** program, I’ve built hands-on projects using **JavaScript**, **React**, **Java**, **Spring Boot**, and **MySQL**.  
+
 I love how coding brings together logic, creativity, and collaboration — and I’m excited to keep growing as a developer, contributing to **meaningful projects** that make technology approachable and inspiring.
 
 ---
