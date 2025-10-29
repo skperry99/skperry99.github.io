@@ -1,19 +1,19 @@
 <div align="center">
-  <img src="https://example.com/your-avatar-or-banner-image.png" alt="Your Name" width="200" />
-  <h1>Hi there, I'm Sarah! 👋</h1>
+  <h1>Hi, I'm Sarah! 👋</h1>
 </div>
 
 ---
 
 ### 💼 About Me
 
-I'm a **[Your Job Title/Area of Expertise]** with a passion for **[your main interests, e.g., web development, data science, open source]**. My journey in tech involves **[briefly mention a key area or experience]**. This is my personal corner of the internet where I showcase my projects, experiments, and skills.
+I'm a full-stack software developer who loves creating applications that are both technically solid and delightful to use.
 
--   🔭 I’m currently working on **backend design using Java, MySQL and Spring Boot**.
--   🌱 I’m always learning **[a new technology, framework, or skill]**.
--   💬 I enjoy discussing **[topics you like to talk about, e.g., Python, design patterns, cloud architecture]**.
--   📫 You can connect with me on [LinkedIn](https://www.linkedin.com/in/sarah-k-perry/).
--   ⚡ Fun fact: **[A personal fun fact about you]**.
+I began my career designing and optimizing wireless networks — large, intricate systems that required precision and creative problem-solving.
+After 15 years in engineering, I discovered a new passion in software development, where I get to combine the same analytical mindset with creative design and user interaction.
+
+Through LaunchCode’s Full-Stack Software Developer program, I’ve built hands-on projects using JavaScript, React, Java, Spring Boot, and MySQL.
+
+I love how coding brings together logic, creativity, and collaboration — and I’m excited to keep growing as a developer, contributing to meaningful projects that make technology approachable and inspiring.
 
 ---
 
@@ -21,18 +21,18 @@ I'm a **[Your Job Title/Area of Expertise]** with a passion for **[your main int
 
 Here are some of my featured projects. You can find more in my repositories.
 
-#### [Project 1 Name]
-A brief, one-sentence description of the project and its purpose.
--   **Technologies:** [List the main technologies used, e.g., React, Node.js, Express, MongoDB]
--   **Highlights:** What makes this project interesting or unique?
--   **Repository:** [Link to the project's GitHub repo]
--   **Live Demo:** [Link to the live project, if available]
+#### Pixel Pets
+Gamified pet adoption experience featuring full CRUD, RESTful API, and user authentication.
+-   **Technologies:** React, Spring Boot, MySQL
+-   **Highlights:** Developed a Spring Boot REST API to manage users, pets, and pet actions.
+-   **Repository:** https://github.com/skperry99/pixel-pets
 
-#### [Project 2 Name]
-Another one-sentence summary of what this project does.
--   **Technologies:** [e.g., Python, Pandas, Matplotlib, Jupyter Notebook]
--   **Highlights:** A point about a key feature or learning experience.
--   **Repository:** [Link to the project's GitHub repo]
+#### Adopt Me - Bark Avenue Rescue Kennel
+Simulates a virtual animal shelter experience with dynamic React components and engaging UI.
+-   **Technologies:** React
+-   **Highlights:** Used React Router for routing, CSS3 for styling, and Netlify for deployment.
+-   **Repository:** https://github.com/skperry99/unit1-final-project
+-   **Live Site:** https://stupendous-fudge-da75f3.netlify.app/
 
 ---
 
@@ -41,18 +41,14 @@ Another one-sentence summary of what this project does.
 Here are some of the tools and languages I'm experienced with.
 
 **Languages:**
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=java&logoColor=white)
 
 **Frameworks:**
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
 
 **Tools & Platforms:**
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
 
 ---
 
@@ -65,4 +61,4 @@ Here are some of the tools and languages I'm experienced with.
 
 ### 🔗 Let's Connect
 
--   **LinkedIn:** [https://linkedin.com/in/yourprofile](https://linkedin.com/in/sarah-k-perry/)
+-   **LinkedIn:** [https://linkedin.com/in/sarah-k-perry](https://linkedin.com/in/sarah-k-perry/)
