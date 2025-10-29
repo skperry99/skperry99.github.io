@@ -21,7 +21,7 @@ I love how coding brings together logic, creativity, and collaboration — and I
 <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
   <div class="project-card" style="flex: 1 1 250px;">
     <h3>Frontend</h3>
-    <p>React • JavaScript (ES6+) • HTML5 • CSS3</p>
+    <p>React • JavaScript • HTML5 • CSS3</p>
   </div>
   <div class="project-card" style="flex: 1 1 250px;">
     <h3>Backend</h3>
