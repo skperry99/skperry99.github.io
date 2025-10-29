@@ -14,5 +14,5 @@ Whether you want to discuss code, design, or how to make digital experiences mor
 
 ## <span class="underline-span">Contact Info</span>
 
-💼 **LinkedIn:** [linkedin.com/in/skperry99](https://www.linkedin.com/in/skperry99)  
+💼 **LinkedIn:** [linkedin.com/in/sarah-k-perry](https://www.linkedin.com/in/sarah-k-perry)  
 🐙 **GitHub:** [github.com/skperry99](https://github.com/skperry99)  
