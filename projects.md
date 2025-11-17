@@ -4,7 +4,22 @@ title: Projects
 permalink: /projects/
 ---
 
-# 💻 Featured Projects
+# 💻 <span class="underline-span">Featured Projects</span>
+
+<div class="project-card">
+  <p>
+    These applications were built as part of my journey through
+    <strong>LaunchCode’s Full-Stack Software Developer</strong> program and
+    independent study. They highlight my skills in
+    <strong>React</strong>, <strong>Java</strong>, <strong>Spring Boot</strong>,
+    <strong>MySQL</strong>, and front-end design.
+  </p>
+  <p style="margin-bottom: 0;">
+    Below you’ll find my full-stack capstone, <strong>Pixel Pets</strong>, and my
+    front-end project, <strong>Adopt Me – Bark Avenue Rescue Kennel</strong>,
+    both fully deployed and available to explore.
+  </p>
+</div>
 
 <section class="projects-grid">
 
@@ -16,8 +31,7 @@ permalink: /projects/
     <div style="margin: 1rem 0 1.5rem;">
       <img 
         src="/assets/images/pixel-pets-dashboard.png" 
-        alt="Screenshot of the Pixel Pets dashboard showing a virtual pet with status bars and action buttons" 
-        style="max-width: 100%; border-radius: 12px;"
+        alt="Screenshot of the Pixel Pets dashboard showing a virtual pet with status bars and action buttons"
       />
     </div>
 
@@ -48,8 +62,7 @@ permalink: /projects/
     <div style="margin: 1rem 0 1.5rem;">
       <img 
         src="/assets/images/adopt-me-home.png" 
-        alt="Screenshot of the Adopt Me – Bark Avenue Rescue Kennel home page showing navigation and featured pets" 
-        style="max-width: 100%; border-radius: 12px;"
+        alt="Screenshot of the Adopt Me – Bark Avenue Rescue Kennel home page showing navigation and featured pets"
       />
     </div>
 
