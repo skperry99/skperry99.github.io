@@ -11,6 +11,16 @@ permalink: /projects/
   <article class="project-card">
     <h2>🐉 Pixel Pets</h2>
     <h3 class="subtitle">Full Stack Capstone | React • Spring Boot • MySQL • REST API • CSS3</h3>
+    <p><strong>Capstone Project • Deployed &amp; Live</strong></p>
+
+    <div style="margin: 1rem 0 1.5rem;">
+      <img 
+        src="/assets/images/pixel-pets-dashboard.png" 
+        alt="Screenshot of the Pixel Pets dashboard showing a virtual pet with status bars and action buttons" 
+        style="max-width: 100%; border-radius: 12px;"
+      />
+    </div>
+
     <p><strong>Overview:</strong>  
     Pixel Pets is a full-stack virtual pet adoption and care platform where users can create, adopt, and interact with digital pets that grow and respond over time. It merges playful pixel-art visuals with a robust backend architecture for a fun yet technically challenging experience.</p>
     
@@ -24,15 +34,25 @@ permalink: /projects/
 
     <p><strong>Impact:</strong>  
     Demonstrates my ability to design, develop, and deploy a complete full-stack application connecting UX, database design, and API-driven functionality.</p>
-   <div class="button-group">
-      <a class="button" href="https://pixelpets.netlify.app/" target="_blank">View Live</a>
+
+    <div class="button-group">
+      <a class="button" href="https://pixelpets.netlify.app/" target="_blank">🎮 View Live</a>
       <a class="button" href="https://github.com/skperry99/pixel-pets" target="_blank">View on GitHub</a>
-   </div>
+    </div>
   </article>
 
   <article class="project-card">
     <h2>🐾 Adopt Me – Bark Avenue Rescue Kennel</h2>
     <h3 class="subtitle">Frontend Project | React • React Router • JavaScript • CSS3 • Netlify</h3>
+
+    <div style="margin: 1rem 0 1.5rem;">
+      <img 
+        src="/assets/images/adopt-me-home.png" 
+        alt="Screenshot of the Adopt Me – Bark Avenue Rescue Kennel home page showing navigation and featured pets" 
+        style="max-width: 100%; border-radius: 12px;"
+      />
+    </div>
+
     <p><strong>Overview:</strong>  
     Adopt Me is a cheerful, story-driven React web app that simulates a pet adoption experience at a fictional animal rescue. It combines humor and heart with clean design and dynamic navigation to create an engaging, interactive user journey.</p>
 
