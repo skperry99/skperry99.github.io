@@ -24,8 +24,10 @@ permalink: /projects/
 
     <p><strong>Impact:</strong>  
     Demonstrates my ability to design, develop, and deploy a complete full-stack application connecting UX, database design, and API-driven functionality.</p>
-
-    <a class="button" href="https://github.com/skperry99/pixel-pets" target="_blank">View on GitHub</a>
+   <div class="button-group">
+      <a class="button" href="https://pixelpets.netlify.app/" target="_blank">View Live</a>
+      <a class="button" href="https://github.com/skperry99/pixel-pets" target="_blank">View on GitHub</a>
+   </div>
   </article>
 
   <article class="project-card">
