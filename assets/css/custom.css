@@ -180,24 +180,26 @@ a:hover {
 /* ----------------------------
    Headings with Accent Underline
 ----------------------------- */
-h1, h2, h3 {
+.main-content h1,
+.main-content h2,
+.main-content h3 {
   color: #222;
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   font-weight: 700;
 }
 
-h1 span.underline-span,
-h2 span.underline-span,
-h3 span.underline-span {
+.main-content h1 span.underline-span,
+.main-content h2 span.underline-span,
+.main-content h3 span.underline-span {
   display: inline-block;
   position: relative;
   padding-bottom: 6px;
 }
 
-h1 span.underline-span::after,
-h2 span.underline-span::after,
-h3 span.underline-span::after {
+.main-content h1 span.underline-span::after,
+.main-content h2 span.underline-span::after,
+.main-content h3 span.underline-span::after {
   content: "";
   position: absolute;
   bottom: 0;
