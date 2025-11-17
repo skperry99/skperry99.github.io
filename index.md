@@ -3,6 +3,14 @@ layout: default
 title: Home
 ---
 
+<p>
+  <img
+    src="/assets/images/purple-swirl.jpg"
+    alt="Abstract purple swirl background that matches my personal brand colors"
+    style="width: 100%; max-height: 280px; object-fit: cover; border-radius: 12px; margin-bottom: 1.5rem;"
+  >
+</p>
+
 # 👋 Welcome
 
 Hi, I'm **Sarah Perry** — a **full-stack software developer** who loves creating applications that are both technically solid and delightful to use.
@@ -13,6 +21,14 @@ After 15 years in engineering, I discovered a new passion in **software developm
 Through **LaunchCode’s Full-Stack Software Developer** program, I’ve built hands-on projects using **JavaScript**, **React**, **Java**, **Spring Boot**, and **MySQL**.  
 
 I love how coding brings together logic, creativity, and collaboration — and I’m excited to keep growing as a developer, contributing to **meaningful projects** that make technology approachable and inspiring.
+
+<p>
+  <img
+    src="/assets/images/workspace-setup.jpg"
+    alt="Minimal developer workspace with laptop, headphones, and plant on a white desk"
+    style="width: 100%; max-width: 640px; display: block; margin: 1.5rem auto; border-radius: 12px;"
+  >
+</p>
 
 ---
 
