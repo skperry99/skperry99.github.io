@@ -28,7 +28,7 @@ Results-driven **Telecommunications Engineer** transitioning into **Software Dev
 
 ### <span class="underline-span">Pixel Pets</span>  
 Full-Stack Application | React + Spring Boot + MySQL  
-[💻 GitHub](https://github.com/skperry99/pixel-pets)
+[🌐 Live Site](https://pixelpets.netlify.app/) • [💻 GitHub](https://github.com/skperry99/pixel-pets)
 
 Gamified pet adoption experience featuring full CRUD, RESTful API, and user authentication.
 
