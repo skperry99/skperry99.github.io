@@ -14,7 +14,6 @@ permalink: /resume/
     </a>
   </p>
   <p style="font-size: 0.9rem; color: #555;">
-    General resume used when applying for junior / entry-level software developer roles.
   </p>
 </div>
 
