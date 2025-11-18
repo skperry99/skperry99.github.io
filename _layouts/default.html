@@ -78,7 +78,7 @@
 
     <script>
       document.addEventListener("DOMContentLoaded", function() {
-      const cards = document.querySelectorAll('.project-card');
+      const cards = document.querySelectorAll('.project-card:not(.no-animate)');
         
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
