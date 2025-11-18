@@ -49,15 +49,15 @@ title: Home
 ## 💻 <span class="underline-span">Technical Skills</span>
 
 <div class="skills-grid">
-  <div class="project-card skills-card">
+  <div class="project-card skills-card no-animate">
     <h3>Frontend</h3>
     <p>React • JavaScript • HTML5 • CSS3</p>
   </div>
-  <div class="project-card skills-card">
+  <div class="project-card skills-card no-animate">
     <h3>Backend</h3>
     <p>Java • Spring Boot • RESTful APIs</p>
   </div>
-  <div class="project-card skills-card">
+  <div class="project-card skills-card no-animate">
     <h3>Database &amp; Tools</h3>
     <p>MySQL • Git • IntelliJ • VS Code</p>
   </div>
