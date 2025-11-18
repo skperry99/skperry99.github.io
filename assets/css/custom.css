@@ -278,6 +278,11 @@ a:hover {
   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
 }
 
+.project-card.no-animate {
+  opacity: 1;
+  transform: none;
+}
+
 /* ----------------------------
    Contact Cards
 ----------------------------- */
