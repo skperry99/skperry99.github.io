@@ -383,3 +383,22 @@ a:hover {
     padding: 1.25rem 1rem;
   }
 }
+
+/* ----------------------------
+   Skills
+----------------------------- */
+
+.skills-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.skills-card {
+  flex: 1 1 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
