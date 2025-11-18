@@ -48,16 +48,16 @@ title: Home
 
 ## 💻 <span class="underline-span">Technical Skills</span>
 
-<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
-  <div class="project-card" style="flex: 1 1 250px;">
+<div class="skills-grid">
+  <div class="project-card skills-card">
     <h3>Frontend</h3>
     <p>React • JavaScript • HTML5 • CSS3</p>
   </div>
-  <div class="project-card" style="flex: 1 1 250px;">
+  <div class="project-card skills-card">
     <h3>Backend</h3>
     <p>Java • Spring Boot • RESTful APIs</p>
   </div>
-  <div class="project-card" style="flex: 1 1 250px;">
+  <div class="project-card skills-card">
     <h3>Database &amp; Tools</h3>
     <p>MySQL • Git • IntelliJ • VS Code</p>
   </div>
