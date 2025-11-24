@@ -59,10 +59,10 @@ permalink: /resume/
 </div>
 
 <div class="project-card">
-  <h3><span class="underline-span">Adopt Me – Bark Avenue Rescue Kennel</span></h3>
+  <h3><span class="underline-span">Furever Friends Rescue</span></h3>
   <p><strong>React Front-End Application</strong></p>
   <p>
-    <a href="https://stupendous-fudge-da75f3.netlify.app/" target="_blank">🌐 Live Site</a> •
+    <a href="https://furever-friends-rescue.netlify.app/" target="_blank">🌐 Live Site</a> •
     <a href="https://github.com/skperry99/unit1-final-project" target="_blank">💻 GitHub</a>
   </p>
   <p>
