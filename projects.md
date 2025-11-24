@@ -55,9 +55,11 @@ permalink: /projects/
     </div>
   </article>
 
-  <article class="project-card">
+    <article class="project-card">
     <h2>🐾 Furever Friends Rescue</h2>
     <h3 class="subtitle">Frontend Project | React • React Router • JavaScript • CSS3 • Netlify</h3>
+
+    <p><strong>Browse adoptable pets, meet their stories, and find a furever friend.</strong></p>
 
     <div style="margin: 1rem 0 1.5rem;">
       <img 
@@ -66,24 +68,24 @@ permalink: /projects/
       />
     </div>
 
-    <p><strong>Overview:</strong>  
-    Furever Friends Rescue is a cheerful, story-driven React web app that simulates a pet adoption experience at a fictional animal rescue. It combines humor and heart with clean design and dynamic navigation to create an engaging, interactive user journey.</p>
+    <p><strong>Overview:</strong><br />
+    Furever Friends Rescue is a cheerful, story-driven React web app that simulates a pet adoption experience at a fictional animal rescue. Visitors can browse adoptable animals with personality-filled bios, submit adoption interest forms, share their own adoption stories, and learn how to get involved with the rescue.</p>
 
     <p><strong>Highlights:</strong></p>
     <ul>
-      <li>Developed a multi-page React app with React Router for smooth, dynamic navigation between pages.</li>
-      <li>Built reusable components for pet profiles and adoption forms, improving consistency and maintainability.</li>
-      <li>Designed a fully responsive layout using custom CSS, Google Fonts, and subtle animations for accessibility and personality.</li>
-      <li>Structured the app with a modular component architecture and deployed live to Netlify for seamless hosting.</li>
+      <li>Built a multi-page React app with React Router for smooth, dynamic navigation between pages.</li>
+      <li>Implemented a smart adoption interest form that auto-fills the selected animal’s name from the gallery.</li>
+      <li>Designed reusable components for pet profiles, stories, and forms to keep the UI consistent and maintainable.</li>
+      <li>Created a fully responsive layout with custom CSS, Google Fonts, and subtle animations for a friendly, accessible experience.</li>
+      <li>Added fun “delight moments,” including confetti celebrations on successful adoption interest submissions.</li>
     </ul>
 
-    <p><strong>Impact:</strong>  
-    Demonstrates ability to create user-focused, visually cohesive front-end experiences that balance creativity and functionality.</p>
+    <p><strong>Impact:</strong><br />
+    Demonstrates my ability to design and ship a user-focused, visually cohesive front-end experience that balances creativity, clarity, and usability.</p>
 
     <div class="button-group">
       <a class="button" href="https://furever-friends-rescue.netlify.app/" target="_blank">View Live</a>
       <a class="button" href="https://github.com/skperry99/furever-friends-rescue" target="_blank">View on GitHub</a>
     </div>
   </article>
-
 </section>
