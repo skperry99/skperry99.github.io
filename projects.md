@@ -16,7 +16,7 @@ permalink: /projects/
   </p>
   <p style="margin-bottom: 0;">
     Below you’ll find my full-stack capstone, <strong>Pixel Pets</strong>, and my
-    front-end project, <strong>Adopt Me – Bark Avenue Rescue Kennel</strong>,
+    front-end project, <strong>Furever Friends Rescue</strong>,
     both fully deployed and available to explore.
   </p>
 </div>
@@ -56,18 +56,18 @@ permalink: /projects/
   </article>
 
   <article class="project-card">
-    <h2>🐾 Adopt Me – Bark Avenue Rescue Kennel</h2>
+    <h2>🐾 Furever Friends Rescue</h2>
     <h3 class="subtitle">Frontend Project | React • React Router • JavaScript • CSS3 • Netlify</h3>
 
     <div style="margin: 1rem 0 1.5rem;">
       <img 
         src="/assets/images/adopt-me-home.png" 
-        alt="Screenshot of the Adopt Me – Bark Avenue Rescue Kennel home page showing navigation and featured pets"
+        alt="Screenshot of the Furever Friends Rescue home page showing navigation and featured pets"
       />
     </div>
 
     <p><strong>Overview:</strong>  
-    Adopt Me is a cheerful, story-driven React web app that simulates a pet adoption experience at a fictional animal rescue. It combines humor and heart with clean design and dynamic navigation to create an engaging, interactive user journey.</p>
+    Furever Friends Rescue is a cheerful, story-driven React web app that simulates a pet adoption experience at a fictional animal rescue. It combines humor and heart with clean design and dynamic navigation to create an engaging, interactive user journey.</p>
 
     <p><strong>Highlights:</strong></p>
     <ul>
@@ -81,8 +81,8 @@ permalink: /projects/
     Demonstrates ability to create user-focused, visually cohesive front-end experiences that balance creativity and functionality.</p>
 
     <div class="button-group">
-      <a class="button" href="https://stupendous-fudge-da75f3.netlify.app/" target="_blank">View Live</a>
-      <a class="button" href="https://github.com/skperry99/unit1-final-project" target="_blank">View on GitHub</a>
+      <a class="button" href="https://furever-friends-rescue.netlify.app/" target="_blank">View Live</a>
+      <a class="button" href="https://github.com/skperry99/furever-friends-rescue" target="_blank">View on GitHub</a>
     </div>
   </article>
 
