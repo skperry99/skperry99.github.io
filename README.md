@@ -18,18 +18,20 @@ Through LaunchCode’s Full-Stack Software Developer program, I’ve built proje
 
 Here are a few featured projects. You can find more in my repositories.
 
-#### Pixel Pets
+#### 🐉 Pixel Pets
 A retro-style virtual pet app with a full REST API, time-based game logic, and user authentication.
 - **Technologies:** React, Spring Boot, MySQL
-- **Highlights:** Designed and implemented a Spring Boot REST API to manage users, pets, and actions; built a responsive React UI that visualizes real-time pet stats.
+- **Highlights:** Designed and implemented a Spring Boot REST API to manage users, pets, and actions; built a responsive React UI that visualizes real-time pet stats in a playful, pixel-art interface.
+- **Live Site:** https://pixelpets.netlify.app/
 - **Repository:** https://github.com/skperry99/pixel-pets
 
-#### Furever Friends Rescue
-A responsive pet adoption site that simulates a fictional animal rescue with dynamic React components and an approachable UI.
-- **Technologies:** React
-- **Highlights:** Uses React Router for client-side routing, custom CSS for styling, and Netlify for deployment.
-- **Repository:** https://github.com/skperry99/furever-friends-rescue.git
+#### 🐾 Furever Friends Rescue
+Browse adoptable pets, meet their stories, and find a furever friend.
+- **Overview:** Furever Friends Rescue is a cheerful, story-driven React web app that simulates a pet adoption experience at a fictional animal rescue. Visitors can browse adoptable animals with personality-filled bios, submit adoption interest forms, and share their own adoption stories.
+- **Technologies:** React, React Router, JavaScript, CSS3, Netlify
+- **Highlights:** Built a multi-page React app with React Router, reusable components for pet profiles and forms, and a fully responsive layout with custom CSS, Google Fonts, and subtle animations.
 - **Live Site:** https://furever-friends-rescue.netlify.app/
+- **Repository:** https://github.com/skperry99/furever-friends-rescue
 
 ---
 
