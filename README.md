@@ -65,3 +65,11 @@ Browse adoptable pets, meet their stories, and find a furever friend.
 ### 🔗 Let's Connect
 
 - **LinkedIn:** [https://linkedin.com/in/sarah-k-perry](https://linkedin.com/in/sarah-k-perry/)
+
+---
+
+## License
+
+- The **site code** (templates, styles, components) is licensed under the MIT License – see [LICENSE](./LICENSE).
+- The **site content** (text, images, branding, and written materials) is © 2025 Sarah Perry, all rights reserved.  
+  Please do not reuse this content without permission.
