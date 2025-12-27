@@ -67,7 +67,7 @@ body {
   gap: 1rem;
   background: linear-gradient(90deg, #8a2be2, #6b5bff);
   padding: 0.8rem 1rem;
-  border-radius: 0 0 20px 20px;
+  border-radius: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
   position: sticky;
   top: 0;
