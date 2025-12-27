@@ -29,15 +29,15 @@ permalink: /projects/
     <p><strong>Capstone Project • Deployed &amp; Live</strong></p>
 
     <div style="margin: 1rem 0 1.5rem;">
-      <img 
-        src="/assets/images/pixel-pets-dashboard.png" 
+      <img
+        src="/assets/images/pixel-pets-dashboard.png"
         alt="Screenshot of the Pixel Pets dashboard showing a virtual pet with status bars and action buttons"
       />
     </div>
 
-    <p><strong>Overview:</strong>  
+    <p><strong>Overview:</strong><br/>
     Pixel Pets is a full-stack virtual pet adoption and care platform where users can create, adopt, and interact with digital pets that grow and respond over time. It merges playful pixel-art visuals with a robust backend architecture for a fun yet technically challenging experience.</p>
-    
+
     <p><strong>Highlights:</strong></p>
     <ul>
       <li>Built a React front end with custom components for pet interactions, profile management, and adoption flow.</li>
@@ -46,24 +46,24 @@ permalink: /projects/
       <li>Designed a clean, responsive UI with pixel-art theming and smooth animations for a nostalgic, game-inspired aesthetic.</li>
     </ul>
 
-    <p><strong>Impact:</strong>  
+    <p><strong>Impact:</strong><br/>
     Demonstrates my ability to design, develop, and deploy a complete full-stack application connecting UX, database design, and API-driven functionality.</p>
 
     <div class="button-group">
-      <a class="button" href="https://pixelpets.netlify.app/" target="_blank">🎮 View Live</a>
-      <a class="button" href="https://github.com/skperry99/pixel-pets" target="_blank">View on GitHub</a>
+      <a class="button" href="https://pixelpets.netlify.app/" target="_blank" rel="noopener noreferrer">🎮 View Live</a>
+      <a class="button" href="https://github.com/skperry99/pixel-pets" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
   </article>
 
-    <article class="project-card">
+  <article class="project-card">
     <h2>🐾 Furever Friends Rescue</h2>
     <h3 class="subtitle">Frontend Project | React • React Router • JavaScript • CSS3 • Netlify</h3>
 
     <p><strong>Browse adoptable pets, meet their stories, and find a furever friend.</strong></p>
 
     <div style="margin: 1rem 0 1.5rem;">
-      <img 
-        src="/assets/images/adopt-me-home.png" 
+      <img
+        src="/assets/images/adopt-me-home.png"
         alt="Screenshot of the Furever Friends Rescue home page showing navigation and featured pets"
       />
     </div>
@@ -84,8 +84,9 @@ permalink: /projects/
     Demonstrates my ability to design and ship a user-focused, visually cohesive front-end experience that balances creativity, clarity, and usability.</p>
 
     <div class="button-group">
-      <a class="button" href="https://furever-friends-rescue.netlify.app/" target="_blank">View Live</a>
-      <a class="button" href="https://github.com/skperry99/furever-friends-rescue" target="_blank">View on GitHub</a>
+      <a class="button" href="https://furever-friends-rescue.netlify.app/" target="_blank" rel="noopener noreferrer">View Live</a>
+      <a class="button" href="https://github.com/skperry99/furever-friends-rescue" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
   </article>
+
 </section>

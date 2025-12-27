@@ -1,6 +1,27 @@
-_site
-.sass-cache
-.jekyll-cache
+# --- Jekyll / GitHub Pages build artifacts ---
+_site/
+.sass-cache/
+.jekyll-cache/
 .jekyll-metadata
-vendor
+
+# Bundler / Ruby
+.bundle/
+vendor/
 Gemfile.lock
+
+# --- Node (in case you add a JS build step later) ---
+node_modules/
+package-lock.json
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-lock.yaml
+
+# --- IDE / editor ---
+.idea/
+.vscode/
+*.iml
+
+# --- OS / misc ---
+.DS_Store
+Thumbs.db

@@ -2,7 +2,6 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 <head>
   <meta charset="UTF-8">
-
   {% seo %}
 
   <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -13,6 +12,8 @@
 
   <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
 
+  <!-- Load custom.css exactly once.
+       If head-custom.html includes custom.css, remove this line instead. -->
   <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
 
   {% include head-custom.html %}
@@ -24,74 +25,78 @@
   <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
 </head>
 
-  <body>
-    <a id="skip-to-content" href="#content">Skip to the content.</a>
+<body>
+  <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-      <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-      {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-      {% endif %}
-      {% if site.show_downloads %}
-        <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
-        <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-      {% endif %}
-    </header>
+  <header class="page-header" role="banner">
+    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
+    <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
+    {% if site.github.is_project_page %}
+      <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+    {% endif %}
+    {% if site.show_downloads %}
+      <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
+      <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
+    {% endif %}
+  </header>
 
-    <nav class="main-nav">
-        <button class="menu-toggle" aria-label="Toggle menu">☰</button>
-          <div class="nav-links">
-            <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">🏠 Home</a>
-            <a href="{{ '/projects/' | relative_url }}" class="{% if page.url == '/projects/' %}active{% endif %}">Projects</a>
-            <a href="{{ '/resume/' | relative_url }}" class="{% if page.url == '/resume/' %}active{% endif %}">Resume</a>
-            <a href="{{ '/contact/' | relative_url }}" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
-          </div>
-    </nav>
+  <nav class="main-nav">
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    <div class="nav-links" id="nav-links">
+      <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">🏠 Home</a>
+      <a href="{{ '/about/' | relative_url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
+      <a href="{{ '/projects/' | relative_url }}" class="{% if page.url == '/projects/' %}active{% endif %}">Projects</a>
+      <a href="{{ '/resume/' | relative_url }}" class="{% if page.url == '/resume/' %}active{% endif %}">Resume</a>
+      <a href="{{ '/contact/' | relative_url }}" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
+    </div>
+  </nav>
 
-    <main id="content" class="main-content" role="main">
-      {{ content }}
-    </main>
+  <main id="content" class="main-content" role="main">
+    {{ content }}
+  </main>
 
-    <footer class="site-footer">
-      <div class="footer-content">
-        <p>© 2025 Sarah Perry • <a href="{{ '/' | relative_url }}">Home</a> • <a href="{{ '/projects/' | relative_url }}">Projects</a> • <a href="{{ '/resume/' | relative_url }}">Resume</a> • <a href="{{ '/contact/' | relative_url }}">Contact</a></p>
-        <p>
-          <a href="https://github.com/skperry99" target="_blank">GitHub</a> • 
-          <a href="https://www.linkedin.com/in/sarah-k-perry/" target="_blank">LinkedIn</a>
-        </p>
-      </div>
-    </footer>
-    
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const toggle = document.querySelector('.menu-toggle');
-        const navLinks = document.querySelector('.nav-links');
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>
+        © 2025 Sarah Perry •
+        <a href="{{ '/' | relative_url }}">Home</a> •
+        <a href="{{ '/about/' | relative_url }}">About</a> •
+        <a href="{{ '/projects/' | relative_url }}">Projects</a> •
+        <a href="{{ '/resume/' | relative_url }}">Resume</a> •
+        <a href="{{ '/contact/' | relative_url }}">Contact</a>
+      </p>
+      <p>
+        <a href="https://github.com/skperry99" target="_blank" rel="noopener noreferrer">GitHub</a> •
+        <a href="https://www.linkedin.com/in/sarah-k-perry/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </p>
+    </div>
+  </footer>
 
-        if (!toggle || !navLinks) return;
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const toggle = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+      if (!toggle || !navLinks) return;
 
-        toggle.addEventListener('click', function() {
-          navLinks.classList.toggle('show');
-        });
+      toggle.addEventListener('click', function () {
+        const isOpen = navLinks.classList.toggle('show');
+        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
       });
-    </script>
+    });
 
-    <script>
-      document.addEventListener("DOMContentLoaded", function() {
+    document.addEventListener('DOMContentLoaded', function () {
       const cards = document.querySelectorAll('.project-card:not(.no-animate)');
-        
       const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             entry.target.classList.add('visible');
-            observer.unobserve(entry.target); // animate only once
+            observer.unobserve(entry.target);
           }
         });
       }, { threshold: 0.2 });
 
       cards.forEach(card => observer.observe(card));
-  });
-</script>
-
-  </body>
+    });
+  </script>
+</body>
 </html>

@@ -76,7 +76,7 @@ I’m seeking a **junior or entry-level software developer** role where I can co
 Pixel Pets is my **full-stack capstone project** — a retro virtual pet app where users can adopt and care for pixelated pets powered by a Spring Boot API and MySQL database.
 
 <div style="text-align: center; margin: 1rem 0 2rem;">
-  <a href="https://pixelpets.netlify.app/" class="button" target="_blank">🎮 Play Pixel Pets (Live)</a>
+  <a href="https://pixelpets.netlify.app/" class="button" target="_blank" rel="noopener noreferrer">🎮 Play Pixel Pets (Live)</a>
   <a href="/projects" class="button">📂 See Project Details</a>
 </div>
 

@@ -27,23 +27,23 @@ permalink: /contact/
   <ul>
     <li>
       💼 <strong>LinkedIn:</strong>
-      <a href="https://www.linkedin.com/in/sarah-k-perry/" target="_blank">
+      <a href="https://www.linkedin.com/in/sarah-k-perry/" target="_blank" rel="noopener noreferrer">
         linkedin.com/in/sarah-k-perry
       </a>
     </li>
     <li>
       🐙 <strong>GitHub:</strong>
-      <a href="https://github.com/skperry99" target="_blank">
+      <a href="https://github.com/skperry99" target="_blank" rel="noopener noreferrer">
         github.com/skperry99
       </a>
     </li>
   </ul>
 
   <div class="button-group">
-    <a class="button" href="https://www.linkedin.com/in/sarah-k-perry/" target="_blank">
+    <a class="button" href="https://www.linkedin.com/in/sarah-k-perry/" target="_blank" rel="noopener noreferrer">
       Connect on LinkedIn
     </a>
-    <a class="button" href="https://github.com/skperry99" target="_blank">
+    <a class="button" href="https://github.com/skperry99" target="_blank" rel="noopener noreferrer">
       View My GitHub
     </a>
   </div>

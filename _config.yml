@@ -1,6 +1,7 @@
 remote_theme: pages-themes/cayman@v0.2.0
 plugins:
   - jekyll-remote-theme
+  - jekyll-seo-tag
 
 title: Sarah Perry | Full-Stack Developer
 description: Full-Stack Software Developer skilled in React, Spring Boot, and MySQL.
@@ -9,11 +10,11 @@ linkedin_username: sarah-k-perry
 
 header_pages:
   - index.md
+  - about.md
   - projects.md
   - resume.md
   - contact.md
 
 include:
-  - /assets/css/custom.css
-  
+  - assets/css/custom.css
 favicon: /assets/favicon.ico

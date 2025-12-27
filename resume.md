@@ -50,8 +50,8 @@ permalink: /resume/
   <h3><span class="underline-span">Pixel Pets</span></h3>
   <p><strong>Full-Stack Application | React + Spring Boot + MySQL</strong></p>
   <p>
-    <a href="https://pixelpets.netlify.app/" target="_blank">🌐 Live Site</a> •
-    <a href="https://github.com/skperry99/pixel-pets" target="_blank">💻 GitHub</a>
+    <a href="https://pixelpets.netlify.app/" target="_blank" rel="noopener noreferrer">🌐 Live Site</a> •
+    <a href="https://github.com/skperry99/pixel-pets" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
   </p>
   <p>
     Gamified pet adoption experience featuring full CRUD, RESTful API, and user authentication.
@@ -62,8 +62,8 @@ permalink: /resume/
   <h3><span class="underline-span">Furever Friends Rescue</span></h3>
   <p><strong>React Front-End Application</strong></p>
   <p>
-    <a href="https://furever-friends-rescue.netlify.app/" target="_blank">🌐 Live Site</a> •
-    <a href="https://github.com/skperry99/unit1-final-project" target="_blank">💻 GitHub</a>
+    <a href="https://furever-friends-rescue.netlify.app/" target="_blank" rel="noopener noreferrer">🌐 Live Site</a> •
+    <a href="https://github.com/skperry99/furever-friends-rescue" target="_blank" rel="noopener noreferrer">💻 GitHub</a>
   </p>
   <p>
     Simulates a virtual animal shelter experience with dynamic React components and engaging UI.
