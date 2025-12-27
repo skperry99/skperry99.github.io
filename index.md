@@ -48,16 +48,16 @@ title: Home
 
 ## 💻 <span class="underline-span">Technical Skills</span>
 
-<div class="skills-grid">
-  <div class="project-card skills-card no-animate">
+<div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+  <div class="project-card" style="flex: 1 1 250px;">
     <h3>Frontend</h3>
     <p>React • JavaScript • HTML5 • CSS3</p>
   </div>
-  <div class="project-card skills-card no-animate">
+  <div class="project-card" style="flex: 1 1 250px;">
     <h3>Backend</h3>
     <p>Java • Spring Boot • RESTful APIs</p>
   </div>
-  <div class="project-card skills-card no-animate">
+  <div class="project-card" style="flex: 1 1 250px;">
     <h3>Database &amp; Tools</h3>
     <p>MySQL • Git • IntelliJ • VS Code</p>
   </div>
@@ -76,7 +76,7 @@ I’m seeking a **junior or entry-level software developer** role where I can co
 Pixel Pets is my **full-stack capstone project** — a retro virtual pet app where users can adopt and care for pixelated pets powered by a Spring Boot API and MySQL database.
 
 <div style="text-align: center; margin: 1rem 0 2rem;">
-  <a href="https://pixelpets.netlify.app/" class="button" target="_blank" rel="noopener noreferrer">🎮 Play Pixel Pets (Live)</a>
+  <a href="https://pixelpets.netlify.app/" class="button" target="_blank">🎮 Play Pixel Pets (Live)</a>
   <a href="/projects" class="button">📂 See Project Details</a>
 </div>
 
