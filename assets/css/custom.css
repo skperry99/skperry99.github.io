@@ -171,25 +171,32 @@ a:hover {
 }
 
 /* Headings */
-h1,
-h2,
-h3 {
-  display: block;
-  position: relative;
-  padding-bottom: 6px;
-  margin-top: 1.5em;
+.main-content h1,
+.main-content h2,
+.main-content h3 {
   color: #222;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+  font-weight: 700;
 }
 
-h1::after,
-h2::after,
-h3::after {
+.main-content h1 span.underline-span,
+.main-content h2 span.underline-span,
+.main-content h3 span.underline-span {
+  display: inline-block;
+  position: relative;
+  padding-bottom: 6px;
+}
+
+.main-content h1 span.underline-span::after,
+.main-content h2 span.underline-span::after,
+.main-content h3 span.underline-span::after {
   content: "";
   position: absolute;
-  left: 0;
   bottom: 0;
-  width: 80px; /* or use 40% for a proportional line */
-  height: 2px;
+  left: 0;
+  width: 100%;
+  height: 3px;
   background: var(--accent-color);
   border-radius: 2px;
 }
