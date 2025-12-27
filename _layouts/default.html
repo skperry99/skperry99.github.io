@@ -1,102 +1,213 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: "en-US" }}">
-<head>
-  <meta charset="UTF-8">
-  {% seo %}
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    <meta charset="UTF-8" />
+    {% seo %}
 
-  <link rel="preconnect" href="https://fonts.gstatic.com">
-  <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#157878">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+      as="style"
+      type="text/css"
+      crossorigin
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap"
+    />
 
-  <link rel="stylesheet" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#157878" />
+    <meta
+      name="apple-mobile-web-app-status-bar-style"
+      content="black-translucent"
+    />
 
-  <!-- Load custom.css exactly once.
-       If head-custom.html includes custom.css, remove this line instead. -->
-  <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/custom.css' | relative_url }}"
+    />
 
-  {% include head-custom.html %}
+    {% include head-custom.html %}
 
-  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/apple-touch-icon.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/favicon-32x32.png' | relative_url }}">
-  <link rel="icon" type="image/png" sizes="16x16" href="{{ '/favicon-16x16.png' | relative_url }}">
-  <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}">
-  <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}">
-</head>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="{{ '/apple-touch-icon.png' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="{{ '/favicon-32x32.png' | relative_url }}"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="{{ '/favicon-16x16.png' | relative_url }}"
+    />
+    <link rel="shortcut icon" href="{{ '/favicon.ico' | relative_url }}" />
+    <link rel="manifest" href="{{ '/site.webmanifest' | relative_url }}" />
+  </head>
 
-<body>
-  <a id="skip-to-content" href="#content">Skip to the content.</a>
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
 
-  <header class="page-header" role="banner">
-    <h1 class="project-name">{{ page.title | default: site.title | default: site.github.repository_name }}</h1>
-    <h2 class="project-tagline">{{ page.description | default: site.description | default: site.github.project_tagline }}</h2>
-    {% if site.github.is_project_page %}
+    <header class="page-header" role="banner">
+      <h1 class="project-name">
+        {{ page.title | default: site.title | default:
+        site.github.repository_name }}
+      </h1>
+      <h2 class="project-tagline">
+        {{ page.description | default: site.description | default:
+        site.github.project_tagline }}
+      </h2>
+      {% if site.github.is_project_page %}
       <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-    {% endif %}
-    {% if site.show_downloads %}
+      {% endif %} {% if site.show_downloads %}
       <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
       <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
-    {% endif %}
-  </header>
+      {% endif %}
+    </header>
 
-  <nav class="main-nav">
-    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
-    <div class="nav-links" id="nav-links">
-      <a href="{{ '/' | relative_url }}" class="{% if page.url == '/' %}active{% endif %}">🏠 Home</a>
-      <a href="{{ '/about/' | relative_url }}" class="{% if page.url == '/about/' %}active{% endif %}">About</a>
-      <a href="{{ '/projects/' | relative_url }}" class="{% if page.url == '/projects/' %}active{% endif %}">Projects</a>
-      <a href="{{ '/resume/' | relative_url }}" class="{% if page.url == '/resume/' %}active{% endif %}">Resume</a>
-      <a href="{{ '/contact/' | relative_url }}" class="{% if page.url == '/contact/' %}active{% endif %}">Contact</a>
-    </div>
-  </nav>
+    <nav class="main-nav" aria-label="Primary">
+      <button
+        class="menu-toggle"
+        type="button"
+        aria-label="Toggle menu"
+        aria-controls="nav-links"
+        aria-expanded="false"
+      >
+        ☰
+      </button>
 
-  <main id="content" class="main-content" role="main">
-    {{ content }}
-  </main>
+      <div class="nav-links" id="nav-links">
+        <a
+          href="{{ '/' | relative_url }}"
+          class="{% if page.url == '/' %}active{% endif %}"
+          >🏠 Home</a
+        >
+        <a
+          href="{{ '/about/' | relative_url }}"
+          class="{% if page.url == '/about/' %}active{% endif %}"
+          >About</a
+        >
+        <a
+          href="{{ '/projects/' | relative_url }}"
+          class="{% if page.url == '/projects/' %}active{% endif %}"
+          >Projects</a
+        >
+        <a
+          href="{{ '/resume/' | relative_url }}"
+          class="{% if page.url == '/resume/' %}active{% endif %}"
+          >Resume</a
+        >
+        <a
+          href="{{ '/contact/' | relative_url }}"
+          class="{% if page.url == '/contact/' %}active{% endif %}"
+          >Contact</a
+        >
+      </div>
+    </nav>
 
-  <footer class="site-footer">
-    <div class="footer-content">
-      <p>
-        © 2025 Sarah Perry •
-        <a href="{{ '/' | relative_url }}">Home</a> •
-        <a href="{{ '/about/' | relative_url }}">About</a> •
-        <a href="{{ '/projects/' | relative_url }}">Projects</a> •
-        <a href="{{ '/resume/' | relative_url }}">Resume</a> •
-        <a href="{{ '/contact/' | relative_url }}">Contact</a>
-      </p>
-      <p>
-        <a href="https://github.com/skperry99" target="_blank" rel="noopener noreferrer">GitHub</a> •
-        <a href="https://www.linkedin.com/in/sarah-k-perry/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      </p>
-    </div>
-  </footer>
+    <main id="content" class="main-content" role="main" tabindex="-1">
+      {{ content }}
+    </main>
 
-  <script>
-    document.addEventListener('DOMContentLoaded', function () {
-      const toggle = document.querySelector('.menu-toggle');
-      const navLinks = document.querySelector('.nav-links');
-      if (!toggle || !navLinks) return;
+    <footer class="site-footer">
+      <div class="footer-content">
+        <p>
+          © 2025 Sarah Perry • <a href="{{ '/' | relative_url }}">Home</a> •
+          <a href="{{ '/about/' | relative_url }}">About</a> •
+          <a href="{{ '/projects/' | relative_url }}">Projects</a> •
+          <a href="{{ '/resume/' | relative_url }}">Resume</a> •
+          <a href="{{ '/contact/' | relative_url }}">Contact</a>
+        </p>
+        <p>
+          <a
+            href="https://github.com/skperry99"
+            target="_blank"
+            rel="noopener noreferrer"
+            >GitHub</a
+          >
+          •
+          <a
+            href="https://www.linkedin.com/in/sarah-k-perry/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >LinkedIn</a
+          >
+        </p>
+      </div>
+    </footer>
 
-      toggle.addEventListener('click', function () {
-        const isOpen = navLinks.classList.toggle('show');
-        toggle.setAttribute('aria-expanded', isOpen ? 'true' : 'false');
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        // Mobile menu toggle
+        const nav = document.querySelector(".main-nav");
+        const toggle = document.querySelector(".menu-toggle");
+        const navLinks = document.querySelector(".nav-links");
+        if (toggle && navLinks) {
+          const closeMenu = () => {
+            navLinks.classList.remove("show");
+            toggle.setAttribute("aria-expanded", "false");
+          };
+
+          const openMenu = () => {
+            navLinks.classList.add("show");
+            toggle.setAttribute("aria-expanded", "true");
+          };
+
+          toggle.addEventListener("click", function () {
+            const isOpen = navLinks.classList.contains("show");
+            isOpen ? closeMenu() : openMenu();
+          });
+
+          // Close on Escape
+          document.addEventListener("keydown", function (e) {
+            if (e.key === "Escape") closeMenu();
+          });
+
+          // Close after clicking a link
+          navLinks.addEventListener("click", function (e) {
+            if (e.target && e.target.tagName === "A") closeMenu();
+          });
+
+          // Optional: close if clicking outside the nav
+          document.addEventListener("click", function (e) {
+            if (!nav.contains(e.target)) closeMenu();
+          });
+        }
+
+        // Scroll-in animation for project cards
+        const cards = document.querySelectorAll(
+          ".project-card:not(.no-animate)"
+        );
+        if (cards.length && "IntersectionObserver" in window) {
+          const observer = new IntersectionObserver(
+            (entries) => {
+              entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                  entry.target.classList.add("visible");
+                  observer.unobserve(entry.target);
+                }
+              });
+            },
+            { threshold: 0.2 }
+          );
+
+          cards.forEach((card) => observer.observe(card));
+        } else {
+          // Fallback: show immediately if IO isn't supported
+          cards.forEach((card) => card.classList.add("visible"));
+        }
       });
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const cards = document.querySelectorAll('.project-card:not(.no-animate)');
-      const observer = new IntersectionObserver(entries => {
-        entries.forEach(entry => {
-          if (entry.isIntersecting) {
-            entry.target.classList.add('visible');
-            observer.unobserve(entry.target);
-          }
-        });
-      }, { threshold: 0.2 });
-
-      cards.forEach(card => observer.observe(card));
-    });
-  </script>
-</body>
+    </script>
+  </body>
 </html>
