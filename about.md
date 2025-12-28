@@ -6,26 +6,40 @@ permalink: /about/
 
 # <span class="underline-span">About Me</span>
 
-<div class="project-card">
+<div class="project-card visible">
+
   <p>
-    Hi, I’m <strong>Sarah Perry</strong> — a <strong>full-stack software developer</strong>
-    who enjoys building applications that are both technically solid and genuinely fun to use.
+    Hi, I’m <strong>Sarah Perry</strong>. I’m a <strong>full-stack software developer</strong> who enjoys
+    building software that’s clear, dependable, and a little bit fun.
   </p>
 
   <p>
-    I started my career designing and optimizing <strong>wireless networks</strong> — large,
-    complex systems that demanded precision and creative problem-solving. After 15 years
-    in engineering, I shifted into <strong>software development</strong>, where I get to apply
-    the same analytical mindset to interactive, user-facing experiences.
+    Before software, I spent about <strong>15 years in telecom engineering</strong> working on wireless networks.
+    That world trains you to think in systems: how data moves, where failures hide, and how to make something
+    stable even when the environment is unpredictable.
   </p>
 
   <p>
-    Through <strong>LaunchCode’s Full-Stack Software Developer</strong> program, I’ve built
-    projects with <strong>JavaScript</strong>, <strong>React</strong>, <strong>Java</strong>,
-    <strong>Spring Boot</strong>, and <strong>MySQL</strong>. I love how coding blends logic,
-    creativity, and collaboration, and I’m excited to keep growing as a developer and contributing
-    to meaningful, approachable tools.
+    Software development became the perfect next chapter because it combines the parts I liked most:
+    problem-solving, design constraints, collaboration, and the satisfaction of improving something piece by piece.
+    I’m especially drawn to work where <strong>users feel the difference</strong>, whether that’s smoother workflows,
+    cleaner interfaces, or fewer “why is this broken?” moments.
   </p>
+
+  <p>
+    Through <strong>LaunchCode’s Full-Stack Software Developer</strong> program, I’ve built projects using
+    <strong>React</strong>, <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>MySQL</strong>.
+    I care a lot about readable code, thoughtful naming, good documentation, and building features with a clear purpose.
+  </p>
+
+  <p>When I’m building, I usually default to:</p>
+  <ul>
+    <li><strong>Start simple</strong>, then iterate with intent.</li>
+    <li><strong>Design for clarity</strong> (for users and future-me).</li>
+    <li><strong>Respect edge cases</strong>, because they’re rarely “edge” in production.</li>
+    <li><strong>Ship and learn</strong>, then refine.</li>
+  </ul>
+
 </div>
 
 <div style="text-align:center; margin-top: 1.5rem;">
