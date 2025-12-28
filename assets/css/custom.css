@@ -281,7 +281,7 @@ a:hover {
   height: 100%;
   margin: 0;
   padding: 1.5rem 2rem;
-  transition: transform 0.4s ease, box-shadow 0.4s ease, opacity 0.6s ease;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.6s ease;
   opacity: 0; /* start hidden */
   transform: translateY(20px); /* start slightly lower */
 }
@@ -329,6 +329,13 @@ a:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Hover should still lift even when card is visible */
+.project-card.visible:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}
+
 
 .contact-card ul {
   list-style: none;
