@@ -1,33 +1,62 @@
-/* Base look: keep the page full-width */
+/* ==========================================================================
+   Site Styles (skperry99.github.io)
+   Organized by: Tokens → Base → Layout → Header/Nav → Sections → Components → Footer → Responsive
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1) Design tokens (colors, spacing hooks)
+   -------------------------------------------------------------------------- */
+:root {
+  --accent-color: #6c63ff;
+  --link-color: var(--accent-color);
+
+  /* Optional future-friendly tokens (safe to keep even if unused) */
+  --text-color: #333;
+  --bg-color: #fafafa;
+  --heading-color: #2b1a8a;
+}
+
+/* --------------------------------------------------------------------------
+   2) Base / global elements
+   -------------------------------------------------------------------------- */
 body {
   font-family: "Inter", "Segoe UI", sans-serif;
-  color: #333;
-  background-color: #fafafa;
+  color: var(--text-color);
+  background-color: var(--bg-color);
   line-height: 1.6;
   margin: 0;
   padding: 0;
-  max-width: none;
+  max-width: none; /* keep page full-width; constrain only .main-content */
 }
 
-/* Constrain just the content column */
+/* Global links */
+a {
+  color: var(--link-color);
+  font-weight: 500;
+}
+a:hover {
+  text-decoration: underline wavy var(--link-color);
+}
+
+/* --------------------------------------------------------------------------
+   3) Layout: constrained content column
+   -------------------------------------------------------------------------- */
 .main-content {
   max-width: 900px;
   margin: 0 auto;
   padding: 20px;
 }
 
+/* Wider screens: give content a bit more breathing room */
 @media (min-width: 1200px) {
   .main-content {
     max-width: 1000px;
   }
 }
 
-/* Accent colors */
-:root {
-  --accent-color: #6c63ff;
-  --link-color: var(--accent-color);
-}
-
+/* --------------------------------------------------------------------------
+   4) Header (hero banner at top of every page)
+   -------------------------------------------------------------------------- */
 .page-header {
   background-image: linear-gradient(
       90deg,
@@ -42,12 +71,15 @@ body {
   padding: 1.75rem 0 1.5rem;
   text-align: center;
   color: #fff;
+
+  /* Keep edges square + flush */
   border-radius: 0;
   box-shadow: none;
   margin-bottom: 0;
   width: 100%;
 }
 
+/* Header content alignment (matches footer width) */
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -61,27 +93,32 @@ body {
 
 .page-header h2 {
   font-size: 1.2rem;
-  margin: 10px 0 0 0;
+  margin: 10px 0 0;
   font-weight: 400;
 }
 
-/* Nav bar */
+/* --------------------------------------------------------------------------
+   5) Navigation
+   -------------------------------------------------------------------------- */
 .main-nav {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   gap: 1rem;
+
   background: linear-gradient(90deg, #8a2be2, #6b5bff);
   padding: 0.8rem 1rem;
+
   border-radius: 0;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+
   position: sticky;
   top: 0;
   z-index: 1000;
   width: 100%;
 }
 
-/* Desktop defaults */
+/* Desktop defaults (menu toggle only used on mobile) */
 .menu-toggle {
   display: none;
   background: transparent;
@@ -99,7 +136,7 @@ body {
   align-items: center;
 }
 
-/* Active Link Animation */
+/* Nav links: hover glow + underline animation */
 .main-nav a {
   color: #fff;
   text-decoration: none;
@@ -110,13 +147,11 @@ body {
   transition: all 0.25s ease-in-out;
 }
 
-/* Hover glow */
 .main-nav a:hover {
   background-color: rgba(255, 255, 255, 0.15);
   transform: translateY(-2px) scale(1.05);
 }
 
-/* Animated underline (slide-in effect) */
 .main-nav a::after {
   content: "";
   position: absolute;
@@ -129,7 +164,6 @@ body {
   transform: translateX(-50%);
 }
 
-/* Fade + lift when active */
 .main-nav a.active {
   background-color: rgba(255, 255, 255, 0.3);
   color: #fff;
@@ -142,15 +176,20 @@ body {
   opacity: 1;
 }
 
+/* --------------------------------------------------------------------------
+   6) Home hero section (content panel + photo)
+   -------------------------------------------------------------------------- */
 .hero {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 1.5rem;
+
   margin: 1.5rem 0 2rem;
   padding: 1.5rem 1.75rem;
+
   border-radius: 12px;
-  background: #ffffff;
+  background: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
 
@@ -182,70 +221,33 @@ body {
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* Adjust hero padding on smaller screens */
+/* Smaller screens: reduce padding so hero doesn’t feel huge */
 @media (max-width: 700px) {
   .hero {
     padding: 1.25rem 1rem;
   }
 }
 
-/* For smaller screens */
-@media (max-width: 760px) {
-  .main-nav {
-    flex-direction: column;
-    align-items: stretch;
-    gap: 0.5rem;
-  }
-
-  .menu-toggle {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    gap: 0.5rem;
-    padding-bottom: 0.5rem;
-  }
-
-  .nav-links.show {
-    display: flex;
-  }
-}
-
-/* Links */
-a {
-  color: var(--link-color);
-  font-weight: 500;
-}
-a:hover {
-  text-decoration: underline wavy var(--link-color);
-}
-
-/* Headings */
+/* --------------------------------------------------------------------------
+   7) Typography: headings + underline span
+   -------------------------------------------------------------------------- */
 .main-content h1,
 .main-content h2,
 .main-content h3 {
-  color: #2b1a8a;
+  color: var(--heading-color);
   margin-top: 1.5em;
   margin-bottom: 0.5em;
   font-weight: 700;
 }
 
-.main-content h1 span.underline-span,
-.main-content h2 span.underline-span,
-.main-content h3 span.underline-span {
+/* Underlined span helper: use <span class="underline-span">Text</span> */
+.main-content .underline-span {
   display: inline-block;
   position: relative;
   padding-bottom: 6px;
 }
 
-.main-content h1 span.underline-span::after,
-.main-content h2 span.underline-span::after,
-.main-content h3 span.underline-span::after {
+.main-content .underline-span::after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -256,7 +258,11 @@ a:hover {
   border-radius: 2px;
 }
 
-/* Project cards */
+/* --------------------------------------------------------------------------
+   8) Grids / rows (Projects + Skills)
+   -------------------------------------------------------------------------- */
+
+/* Projects page grid */
 .projects-grid {
   display: grid;
   grid-template-columns: 1fr; /* single column by default */
@@ -264,39 +270,62 @@ a:hover {
   margin-top: 2rem;
 }
 
-/* Two-column layout on wider screens */
 @media (min-width: 900px) {
   .projects-grid {
     grid-template-columns: 1fr 1fr; /* two columns */
   }
 }
 
-/* Fade-in + lift effect for project cards */
+/* Skills row (Home page): use this class instead of inline style when possible */
+.skills-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: stretch; /* ensures cards align cleanly */
+}
+
+/* --------------------------------------------------------------------------
+   9) Card component (used for projects + skills)
+   -------------------------------------------------------------------------- */
+
+/* Fade-in + lift baseline:
+   - starts hidden + slightly lowered
+   - .visible applied via IntersectionObserver
+*/
 .project-card {
-  background: white;
+  background: #fff;
   border-radius: 12px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+  /* Make card content stack and allow button-group to pin to bottom */
   display: flex;
   flex-direction: column;
   height: 100%;
-  margin: 0;
+
+  margin: 0; /* spacing handled by parent gap */
   padding: 1.5rem 2rem;
+
+  opacity: 0;
+  transform: translateY(20px);
+
+  /* Fast hover + smooth fade-in */
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.6s ease;
-  opacity: 0; /* start hidden */
-  transform: translateY(20px); /* start slightly lower */
 }
 
+/* Hover lift (works for non-visible cards too, though most will be visible quickly) */
 .project-card:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
+/* Prevent global heading top margins from pushing card content down */
 .project-card h1,
 .project-card h2,
 .project-card h3 {
   margin-top: 0;
 }
 
+/* Title + subtitle */
 .project-card h2 {
   margin-bottom: 0.25rem;
   color: #222;
@@ -309,6 +338,7 @@ a:hover {
   margin-bottom: 1rem;
 }
 
+/* Lists and media */
 .project-card ul {
   margin: 0.5rem 0 1rem 1.2rem;
 }
@@ -320,23 +350,24 @@ a:hover {
   border-radius: 12px;
 }
 
+/* Pin buttons to bottom when present */
 .project-card .button-group {
-  margin-top: auto; /* pushes buttons to bottom */
+  margin-top: auto;
 }
 
-/* When visible, fade in and lift */
+/* Scroll-in animation: becomes visible in viewport */
 .project-card.visible {
   opacity: 1;
   transform: translateY(0);
 }
 
-/* Hover should still lift even when card is visible */
+/* Important: keep hover lift working even when .visible is present */
 .project-card.visible:hover {
   transform: translateY(-4px);
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
-
+/* Contact card lists */
 .contact-card ul {
   list-style: none;
   padding-left: 0;
@@ -347,7 +378,9 @@ a:hover {
   margin-bottom: 0.5rem;
 }
 
-/* Buttons */
+/* --------------------------------------------------------------------------
+   10) Buttons
+   -------------------------------------------------------------------------- */
 .button-group {
   display: flex;
   flex-wrap: wrap;
@@ -356,13 +389,13 @@ a:hover {
 
 .button {
   background-color: var(--accent-color);
-  color: white !important;
+  color: #fff !important;
   padding: 10px 18px;
   border-radius: 8px;
   text-decoration: none;
   font-weight: 600;
-  transition: background 0.3s ease, transform 0.2s ease;
   display: inline-block;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 .button:hover {
@@ -370,6 +403,9 @@ a:hover {
   transform: translateY(-2px);
 }
 
+/* --------------------------------------------------------------------------
+   11) Footer
+   -------------------------------------------------------------------------- */
 .site-footer {
   width: 100%;
   padding: 20px 0;
@@ -397,9 +433,31 @@ a:hover {
   padding: 0 20px;
 }
 
-.skills-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  align-items: stretch;
+/* --------------------------------------------------------------------------
+   12) Responsive navigation (mobile)
+   -------------------------------------------------------------------------- */
+@media (max-width: 760px) {
+  .main-nav {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.5rem;
+  }
+
+  .menu-toggle {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+
+  .nav-links.show {
+    display: flex;
+  }
 }
