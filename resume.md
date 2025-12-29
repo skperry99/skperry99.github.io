@@ -6,14 +6,12 @@ permalink: /resume/
 
 # <span class="underline-span">Resume</span>
 
-<div class="project-card">
+<div class="project-card resume-download">
   <p><strong>📥 Download my Resume (PDF)</strong></p>
   <p>
     <a href="{{ '/assets/Resume.pdf' | relative_url }}" class="button">
       Download Resume
     </a>
-  </p>
-  <p style="font-size: 0.9rem; color: #555;">
   </p>
 </div>
 

@@ -15,24 +15,23 @@ permalink: /about/
 
   <p>
     Before software, I spent about <strong>15 years in telecom engineering</strong> working on wireless networks.
-    That world trains you to think in systems: how data moves, where failures hide, and how to make something
-    stable even when the environment is unpredictable.
+    That role sharpened my instincts for complex systems: how things connect, where failures hide, and how to
+    make a solution resilient instead of fragile.
   </p>
 
   <p>
-    Software development became the perfect next chapter because it combines the parts I liked most:
-    problem-solving, design constraints, collaboration, and the satisfaction of improving something piece by piece.
-    I’m especially drawn to work where <strong>users feel the difference</strong>, whether that’s smoother workflows,
-    cleaner interfaces, or fewer “why is this broken?” moments.
+    I transitioned into <strong>software development</strong> because it brings together the parts of my work
+    I’ve always loved: structured problem-solving, collaborating with others, and designing solutions that hold up
+    under real-world use.
   </p>
 
   <p>
     Through <strong>LaunchCode’s Full-Stack Software Developer</strong> program, I’ve built projects using
     <strong>React</strong>, <strong>Java</strong>, <strong>Spring Boot</strong>, and <strong>MySQL</strong>.
-    I care a lot about readable code, thoughtful naming, good documentation, and building features with a clear purpose.
+    I care about readable code, thoughtful naming, and documentation that helps the next person succeed.
   </p>
 
-  <p>When I’m building, I usually default to:</p>
+  <h2 class="subtitle">How I Like to Build</h2>
   <ul>
     <li><strong>Start simple</strong>, then iterate with intent.</li>
     <li><strong>Design for clarity</strong> (for users and future-me).</li>
@@ -40,9 +39,16 @@ permalink: /about/
     <li><strong>Ship and learn</strong>, then refine.</li>
   </ul>
 
+  <h2 class="subtitle">What You Can Expect Working With Me</h2>
+  <ul>
+    <li>Strong ownership, steady communication, and a bias toward finishing.</li>
+    <li>A systems mindset: I think about reliability, data flow, and “what breaks next?”</li>
+    <li>Care for the user experience, not just the code path.</li>
+  </ul>
+
 </div>
 
-<div style="text-align:center; margin-top: 1.5rem;">
+<div class="center-actions">
   <a href="/projects" class="button">🚀 View Projects</a>
   <a href="/resume" class="button">📄 View Resume</a>
   <a href="/contact" class="button">✉️ Get in Touch</a>

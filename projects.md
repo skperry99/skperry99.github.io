@@ -6,7 +6,7 @@ permalink: /projects/
 
 # 💻 <span class="underline-span">Featured Projects</span>
 
-<div class="project-card">
+<div class="project-card intro-card visible">
   <p>
     These applications were built as part of my journey through
     <strong>LaunchCode’s Full-Stack Software Developer</strong> program and
@@ -14,7 +14,7 @@ permalink: /projects/
     <strong>React</strong>, <strong>Java</strong>, <strong>Spring Boot</strong>,
     <strong>MySQL</strong>, and front-end design.
   </p>
-  <p style="margin-bottom: 0;">
+  <p class="no-bottom-margin">
     Below you’ll find my full-stack capstone, <strong>Pixel Pets</strong>, and my
     front-end project, <strong>Furever Friends Rescue</strong>,
     both fully deployed and available to explore.
@@ -28,7 +28,7 @@ permalink: /projects/
     <h3 class="subtitle">Full Stack Capstone | React • Spring Boot • MySQL • REST API • CSS3</h3>
     <p><strong>Capstone Project • Deployed &amp; Live</strong></p>
 
-    <div style="margin: 1rem 0 1.5rem;">
+    <div class="media-block">
       <img
         src="/assets/images/pixel-pets-dashboard.png"
         alt="Screenshot of the Pixel Pets dashboard showing a virtual pet with status bars and action buttons"
@@ -53,6 +53,7 @@ permalink: /projects/
       <a class="button" href="https://pixelpets.netlify.app/" target="_blank" rel="noopener noreferrer">🎮 View Live</a>
       <a class="button" href="https://github.com/skperry99/pixel-pets" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
+
   </article>
 
   <article class="project-card">
@@ -61,7 +62,7 @@ permalink: /projects/
 
     <p><strong>Browse adoptable pets, meet their stories, and find a furever friend.</strong></p>
 
-    <div style="margin: 1rem 0 1.5rem;">
+    <div class="media-block">
       <img
         src="/assets/images/adopt-me-home.png"
         alt="Screenshot of the Furever Friends Rescue home page showing navigation and featured pets"
@@ -87,6 +88,7 @@ permalink: /projects/
       <a class="button" href="https://furever-friends-rescue.netlify.app/" target="_blank" rel="noopener noreferrer">View Live</a>
       <a class="button" href="https://github.com/skperry99/furever-friends-rescue" target="_blank" rel="noopener noreferrer">View on GitHub</a>
     </div>
+
   </article>
 
 </section>

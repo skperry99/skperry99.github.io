@@ -1,24 +1,33 @@
 /* ==========================================================================
    Site Styles (skperry99.github.io)
-   Organized by: Tokens → Base → Layout → Header/Nav → Sections → Components → Footer → Responsive
+   Order: Tokens → Base → Layout → Utilities → Header → Nav → Sections → Components → Footer → Responsive
    ========================================================================== */
 
 /* --------------------------------------------------------------------------
-   1) Design tokens (colors, spacing hooks)
+   1) Design tokens
    -------------------------------------------------------------------------- */
 :root {
   --accent-color: #6c63ff;
   --link-color: var(--accent-color);
 
-  /* Optional future-friendly tokens (safe to keep even if unused) */
   --text-color: #333;
   --bg-color: #fafafa;
   --heading-color: #2b1a8a;
+
+  --radius-lg: 12px;
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.1);
+  --shadow-md: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* --------------------------------------------------------------------------
-   2) Base / global elements
+   2) Base / global
    -------------------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: "Inter", "Segoe UI", sans-serif;
   color: var(--text-color);
@@ -29,13 +38,30 @@ body {
   max-width: none; /* keep page full-width; constrain only .main-content */
 }
 
-/* Global links */
+/* Links */
 a {
   color: var(--link-color);
   font-weight: 500;
 }
+
 a:hover {
   text-decoration: underline wavy var(--link-color);
+}
+
+/* Accessible focus without changing aesthetic */
+a:focus-visible,
+button:focus-visible {
+  outline: 3px solid rgba(108, 99, 255, 0.4);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
+
+/* Style markdown horizontal rules consistently */
+hr {
+  border: 0;
+  height: 1px;
+  background: rgba(0, 0, 0, 0.08);
+  margin: 2rem 0;
 }
 
 /* --------------------------------------------------------------------------
@@ -47,7 +73,6 @@ a:hover {
   padding: 20px;
 }
 
-/* Wider screens: give content a bit more breathing room */
 @media (min-width: 1200px) {
   .main-content {
     max-width: 1000px;
@@ -55,7 +80,49 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   4) Header (hero banner at top of every page)
+   4) Utilities (replaces inline styles)
+   -------------------------------------------------------------------------- */
+.center-actions {
+  text-align: center;
+  margin-top: 1.5rem;
+}
+
+.center-actions.tight {
+  margin-top: 1rem;
+}
+
+.center-actions.loose {
+  margin: 1rem 0 2rem;
+}
+
+.media-block {
+  margin: 1rem 0 1.5rem;
+}
+
+.no-bottom-margin {
+  margin-bottom: 0;
+}
+
+/* Skills cards: replace inline flex styles on each card */
+.skill-card {
+  flex: 1 1 250px;
+}
+
+/* Small text helpers */
+.text-muted {
+  color: #555;
+}
+
+.text-sm {
+  font-size: 0.9rem;
+}
+
+.resume-download p {
+  margin: 0.5rem 0;
+}
+
+/* --------------------------------------------------------------------------
+   5) Header (hero banner at top of every page)
    -------------------------------------------------------------------------- */
 .page-header {
   background-image: linear-gradient(
@@ -72,14 +139,12 @@ a:hover {
   text-align: center;
   color: #fff;
 
-  /* Keep edges square + flush */
   border-radius: 0;
   box-shadow: none;
   margin-bottom: 0;
   width: 100%;
 }
 
-/* Header content alignment (matches footer width) */
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
@@ -98,7 +163,7 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   5) Navigation
+   6) Navigation
    -------------------------------------------------------------------------- */
 .main-nav {
   display: flex;
@@ -118,7 +183,6 @@ a:hover {
   width: 100%;
 }
 
-/* Desktop defaults (menu toggle only used on mobile) */
 .menu-toggle {
   display: none;
   background: transparent;
@@ -136,13 +200,12 @@ a:hover {
   align-items: center;
 }
 
-/* Nav links: hover glow + underline animation */
 .main-nav a {
   color: #fff;
   text-decoration: none;
   font-weight: 600;
   padding: 0.5rem 1rem;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   position: relative;
   transition: all 0.25s ease-in-out;
 }
@@ -177,7 +240,7 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   6) Home hero section (content panel + photo)
+   7) Home hero section (content panel + photo)
    -------------------------------------------------------------------------- */
 .hero {
   display: flex;
@@ -188,7 +251,7 @@ a:hover {
   margin: 1.5rem 0 2rem;
   padding: 1.5rem 1.75rem;
 
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   background: #fff;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
 }
@@ -217,11 +280,10 @@ a:hover {
 .hero-photo img {
   display: block;
   width: 100%;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
   box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
 }
 
-/* Smaller screens: reduce padding so hero doesn’t feel huge */
 @media (max-width: 700px) {
   .hero {
     padding: 1.25rem 1rem;
@@ -229,7 +291,7 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   7) Typography: headings + underline span
+   8) Typography: headings + underline span
    -------------------------------------------------------------------------- */
 .main-content h1,
 .main-content h2,
@@ -259,63 +321,65 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   8) Grids / rows (Projects + Skills)
+   9) Grids / rows
    -------------------------------------------------------------------------- */
-
-/* Projects page grid */
 .projects-grid {
   display: grid;
-  grid-template-columns: 1fr; /* single column by default */
+  grid-template-columns: 1fr;
   gap: 2rem;
   margin-top: 2rem;
 }
 
 @media (min-width: 900px) {
   .projects-grid {
-    grid-template-columns: 1fr 1fr; /* two columns */
+    grid-template-columns: 1fr 1fr;
   }
 }
 
-/* Skills row (Home page): use this class instead of inline style when possible */
 .skills-row {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  align-items: stretch; /* ensures cards align cleanly */
+  align-items: stretch;
 }
 
 /* --------------------------------------------------------------------------
-   9) Card component (used for projects + skills)
+   10) Card component (projects + skills + content blocks)
    -------------------------------------------------------------------------- */
 
-/* Fade-in + lift baseline:
-   - starts hidden + slightly lowered
-   - .visible applied via IntersectionObserver
-*/
+/* Default visible state (graceful fallback if JS is off) */
 .project-card {
   background: #fff;
-  border-radius: 12px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
 
-  /* Make card content stack and allow button-group to pin to bottom */
   display: flex;
   flex-direction: column;
   height: 100%;
 
-  margin: 0; /* spacing handled by parent gap */
+  margin: 0;
   padding: 1.5rem 2rem;
 
-  opacity: 0;
-  transform: translateY(20px);
-
-  /* Fast hover + smooth fade-in */
+  /* Keep interactions smooth */
   transition: transform 0.2s ease, box-shadow 0.2s ease, opacity 0.6s ease;
 }
 
-/* Hover lift (works for non-visible cards too, though most will be visible quickly) */
+/* Apply scroll-in animation if the element is NOT already visible. */
+.project-card:not(.visible) {
+  opacity: 0;
+  transform: translateY(20px);
+}
+
+/* Visible cards settle into place */
+.project-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Hover lift */
 .project-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  box-shadow: var(--shadow-md);
 }
 
 /* Prevent global heading top margins from pushing card content down */
@@ -325,7 +389,6 @@ a:hover {
   margin-top: 0;
 }
 
-/* Title + subtitle */
 .project-card h2 {
   margin-bottom: 0.25rem;
   color: #222;
@@ -338,7 +401,37 @@ a:hover {
   margin-bottom: 1rem;
 }
 
-/* Lists and media */
+/* --------------------------------------------------------------------------
+   Projects page: align card header areas (no truncation)
+   -------------------------------------------------------------------------- */
+
+/* Reserve consistent space for project title */
+.projects-grid .project-card > h2 {
+  line-height: 1.2;
+  min-height: calc(1.2em * 2); /* reserve up to 2 lines */
+}
+
+/* Reserve consistent space for subtitle row */
+.projects-grid .project-card > .subtitle {
+  line-height: 1.25;
+  min-height: calc(1.25em * 2); /* reserve up to 2 lines */
+}
+
+/* Normalize spacing for the short “status” line under subtitle (Pixel Pets only) */
+.projects-grid .project-card > p:first-of-type {
+  margin-top: 0;
+}
+
+/* Optional: keep the title/subtitle area tighter */
+.projects-grid .project-card > h2 {
+  margin-bottom: 0.25rem;
+}
+
+.projects-grid .project-card > .subtitle {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
 .project-card ul {
   margin: 0.5rem 0 1rem 1.2rem;
 }
@@ -347,24 +440,11 @@ a:hover {
   width: 100%;
   height: auto;
   display: block;
-  border-radius: 12px;
+  border-radius: var(--radius-lg);
 }
 
-/* Pin buttons to bottom when present */
 .project-card .button-group {
   margin-top: auto;
-}
-
-/* Scroll-in animation: becomes visible in viewport */
-.project-card.visible {
-  opacity: 1;
-  transform: translateY(0);
-}
-
-/* Important: keep hover lift working even when .visible is present */
-.project-card.visible:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
 }
 
 /* Contact card lists */
@@ -379,7 +459,7 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   10) Buttons
+   11) Buttons
    -------------------------------------------------------------------------- */
 .button-group {
   display: flex;
@@ -404,7 +484,7 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   11) Footer
+   12) Footer
    -------------------------------------------------------------------------- */
 .site-footer {
   width: 100%;
@@ -434,7 +514,7 @@ a:hover {
 }
 
 /* --------------------------------------------------------------------------
-   12) Responsive navigation (mobile)
+   13) Responsive navigation (mobile)
    -------------------------------------------------------------------------- */
 @media (max-width: 760px) {
   .main-nav {
