@@ -432,6 +432,10 @@ hr {
   margin-bottom: 1rem;
 }
 
+.projects-grid .project-meta {
+  min-height: 1.8em; /* roughly one line */
+}
+
 .project-card ul {
   margin: 0.5rem 0 1rem 1.2rem;
 }
@@ -445,6 +449,48 @@ hr {
 
 .project-card .button-group {
   margin-top: auto;
+}
+
+/* --------------------------------------------------------------------------
+   Project meta row (Live badge + pills)
+   -------------------------------------------------------------------------- */
+.project-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 0 1rem;
+}
+
+/* Live badge */
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+  background: rgba(0, 0, 0, 0.06);
+  color: #222;
+}
+
+/* “Live” styling (kept subtle and consistent with your palette) */
+.status-badge.live {
+  background: rgba(46, 204, 113, 0.14);
+  color: #1d6b3d;
+}
+
+/* Secondary pills */
+.meta-pill {
+  display: inline-flex;
+  align-items: center;
+  padding: 0.25rem 0.6rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  background: rgba(108, 99, 255, 0.12);
+  color: #2b1a8a;
 }
 
 /* Contact card lists */
